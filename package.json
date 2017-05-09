@@ -1,0 +1,12 @@
+{
+  "name": "styletron-loader",
+  "version": "0.0.1",
+  "author": "deamme",
+  "description": "Webpack loader to load a CSS object compatible with styletron",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^2.2.1",
+    "lodash": "^4.17.4"
+  }
+}
