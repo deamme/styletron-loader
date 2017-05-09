@@ -1,12 +1,12 @@
 # styletron-loader
-Webpack loader to load CSS into an styletron compatible object by specifying a string with CSS selectors.
+Webpack loader to load CSS into a [styletron](https://github.com/rtsao/styletron/) compatible object by specifying a string with CSS selectors.
 
 Very much inspired by:
 - https://github.com/pl12133/css-object-loader
 - https://github.com/rtsao/styletron/issues/108
 
 ## Usage
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+[Documentation: Using loaders](https://webpack.js.org/concepts/loaders/)
 Create an entry to load `.css` files in your webpack.config:
 
 ```js
