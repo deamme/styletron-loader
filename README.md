@@ -1,5 +1,5 @@
 # styletron-loader
-Webpack loader to load CSS into a [styletron](https://github.com/rtsao/styletron/) compatible object by specifying a string with CSS selectors.
+Webpack loader to load CSS into a [styletron](https://github.com/rtsao/styletron/) compatible CSS object by specifying a string with CSS selectors.
 
 Very much inspired by:
 - https://github.com/pl12133/css-object-loader
@@ -37,7 +37,7 @@ Requiring CSS rules:
   }
 }
 .red-bg {
-	background-color: red
+  background-color: red
 }
 ```
 
