@@ -5,6 +5,11 @@ Very much inspired by:
 - https://github.com/pl12133/css-object-loader
 - https://github.com/rtsao/styletron/issues/108
 
+#Install
+`npm install -D styletron-loader`
+or
+`yarn add --dev styletron-loader`
+
 ## Usage
 [Documentation: Using loaders](https://webpack.js.org/concepts/loaders/)
 Create an entry to load `.css` files in your webpack.config:
