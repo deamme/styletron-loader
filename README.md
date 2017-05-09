@@ -5,7 +5,7 @@ Very much inspired by:
 - https://github.com/pl12133/css-object-loader
 - https://github.com/rtsao/styletron/issues/108
 
-#Install
+# Install
 `npm install -D styletron-loader`
 or
 `yarn add --dev styletron-loader`
