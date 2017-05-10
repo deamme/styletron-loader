@@ -52,18 +52,19 @@ module.exports = function styletronLoader(source) {
     }
   })
 
-  return function() {
-  	var stylesObj = {}
-  	var splittedArgs = arguments[0].split(' ')
-  	if (splittedArgs.length > 1) {
-  		for (var i = 0; i < splittedArgs.length; i++) {
-  			_.assign(stylesObj, _.get(selectors, splittedArgs[i]))
-  		}
-  	} else {
-  		for (var i = 0; i < arguments.length; i++) {
-  			_.assign(stylesObj, _.get(selectors, arguments[i]))
-  		}
-  	}
-  	return 'module.exports = ' + JSON.stringify(stylesObj) + ';';
-  }
+  return 'module.exports = ' + JSON.stringify(stylesObj) + ';';
+  // return function() {
+  // 	var stylesObj = {}
+  // 	var splittedArgs = arguments[0].split(' ')
+  // 	if (splittedArgs.length > 1) {
+  // 		for (var i = 0; i < splittedArgs.length; i++) {
+  // 			_.assign(stylesObj, _.get(selectors, splittedArgs[i]))
+  // 		}
+  // 	} else {
+  // 		for (var i = 0; i < arguments.length; i++) {
+  // 			_.assign(stylesObj, _.get(selectors, arguments[i]))
+  // 		}
+  // 	}
+  	
+  // }
 }
