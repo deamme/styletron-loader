@@ -52,7 +52,7 @@ module.exports = function styletronLoader(source) {
     }
   })
 
-  return 'module.exports = ' + JSON.stringify(stylesObj) + ';';
+  return 'module.exports = ' + JSON.stringify(selectors) + ';';
   // return function() {
   // 	var stylesObj = {}
   // 	var splittedArgs = arguments[0].split(' ')

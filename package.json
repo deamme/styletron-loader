@@ -1,6 +1,6 @@
 {
   "name": "styletron-loader",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "author": "deamme",
   "description": "Webpack loader to load a CSS object compatible with styletron",
   "main": "index.js",
