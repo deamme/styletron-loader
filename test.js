@@ -9,4 +9,4 @@ var _ = require('lodash')
 // Load test CSS file
 var source = fs.readFileSync(path.resolve('styles.css'), 'utf-8')
 
-console.log(styletronLoader(source)('.button .red-bg'))
+console.log(styletronLoader(source))

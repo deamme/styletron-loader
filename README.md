@@ -20,7 +20,7 @@ Create an entry to load `.css` files in your webpack.config:
 module: {
   loaders: [{
       test: /\.css$/,
-      loaders: [ 'styletron' ],
+      loaders: [ 'styletron-loader' ],
       exclude: /node_modules/
     }
   ]
@@ -49,7 +49,20 @@ Requiring CSS rules:
 ```
 
 ```js
-var styles = require('./styles.css');
+var util = require('styletron-loader/util');
+var parsedCSS = require('./styles.css');
+
+parsedCSS['.button']
+/*
+{ 'font-size': '1.5em',
+  color: 'fuchsia',
+  ':hover': { color: 'crimson' },
+  ':focus': { color: 'crimson' },
+  'screen and (max-width: 768px)': { 'font-size': '2em' }
+*/
+
+var styles = util(parsed);
+
 styles('.button .red-bg');
 /*
 { 'font-size': '1.5em',

@@ -38,6 +38,8 @@ function normalizeParsedStyles(selectors, block, media) {
 }
 
 module.exports = function styletronLoader(source) {
+  this.cacheable && this.cacheable();
+
   var parsedStyles = css.parse(source).stylesheet.rules
 
   var selectors = {}
@@ -53,18 +55,4 @@ module.exports = function styletronLoader(source) {
   })
 
   return 'module.exports = ' + JSON.stringify(selectors) + ';';
-  // return function() {
-  // 	var stylesObj = {}
-  // 	var splittedArgs = arguments[0].split(' ')
-  // 	if (splittedArgs.length > 1) {
-  // 		for (var i = 0; i < splittedArgs.length; i++) {
-  // 			_.assign(stylesObj, _.get(selectors, splittedArgs[i]))
-  // 		}
-  // 	} else {
-  // 		for (var i = 0; i < arguments.length; i++) {
-  // 			_.assign(stylesObj, _.get(selectors, arguments[i]))
-  // 		}
-  // 	}
-  	
-  // }
 }
