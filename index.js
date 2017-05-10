@@ -64,6 +64,6 @@ module.exports = function styletronLoader(source) {
   			_.assign(stylesObj, _.get(selectors, arguments[i]))
   		}
   	}
-  	return stylesObj
+  	return 'module.exports = ' + JSON.stringify(stylesObj) + ';';
   }
 }
