@@ -7,7 +7,9 @@ Very much inspired by:
 
 # Install
 `npm install -D styletron-loader`
+
 or
+
 `yarn add --dev styletron-loader`
 
 ## Usage
