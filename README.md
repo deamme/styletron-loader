@@ -59,6 +59,7 @@ parsedCSS['.button']
   ':hover': { color: 'crimson' },
   ':focus': { color: 'crimson' },
   'screen and (max-width: 768px)': { 'font-size': '2em' }
+}
 */
 
 var styles = util(parsed);
@@ -70,6 +71,7 @@ styles('.button .red-bg');
   ':hover': { color: 'crimson' },
   ':focus': { color: 'crimson' },
   'screen and (max-width: 768px)': { 'font-size': '2em' },
-  'background-color': 'red' }
+  'background-color': 'red'
+}
 */
 ```
