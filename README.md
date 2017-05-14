@@ -62,7 +62,7 @@ parsedCSS['.button']
 }
 */
 
-var styles = util(parsed);
+var styles = util(parsedCSS);
 
 styles('.button .red-bg');
 /*
