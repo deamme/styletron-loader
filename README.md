@@ -58,7 +58,7 @@ parsedCSS['.button']
   color: 'fuchsia',
   ':hover': { color: 'crimson' },
   ':focus': { color: 'crimson' },
-  'screen and (max-width: 768px)': { 'font-size': '2em' }
+  '@media screen and (max-width: 768px)': { 'font-size': '2em' }
 }
 */
 
