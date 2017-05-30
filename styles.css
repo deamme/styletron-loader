@@ -1,0 +1,16 @@
+.button {
+  font-size: 1.5em;
+  color: fuchsia;
+}
+.button:hover,
+.button:focus {
+  color: crimson;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 2em;
+  }
+}
+.red-bg {
+  background-color: red
+}

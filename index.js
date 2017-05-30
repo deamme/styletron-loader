@@ -24,7 +24,7 @@ function normalizeParsedStyles(selectors, block, media) {
         getStyles(block.declarations)
       )
     } else if (media) {
-      selectors[selector][media] = _.assign(
+      selectors[selector]['@media ' + media] = _.assign(
         selectors[selector][media],
         getStyles(block.declarations)
       )
